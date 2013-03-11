@@ -7,7 +7,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://alpha.app.net"],
+      "matches": ["https://alpha.app.net/*"],
       "js": ["app.js"]
     }
   ]
