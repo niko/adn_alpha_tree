@@ -14,6 +14,11 @@
 
 (function($){
   var move_responses = function(){
+    var post_count = $('div.post-container').length;
+    if(typeof(__adn_alpha_tree_post_count)!='undefined' && __adn_alpha_tree_post_count == post_count)
+      return false;
+
+    __adn_alpha_tree_post_count = post_count;
     $('.post-container li.in-reply-to').each(
       function(i,elm){
         response = $(elm).closest('.post-container');
