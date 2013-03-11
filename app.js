@@ -33,6 +33,6 @@
       }
     )
   }
-  $('.stream-container').resize(move_responses);
+  $(document).resize(move_responses);
   move_responses();
 })(jQuery);
