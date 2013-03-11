@@ -1,0 +1,14 @@
+{
+  "name": "app.net Alpha response enhancer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Enhance… you know",
+  "browser_action": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery.min.js", "app.js"]
+    }
+  ]
+}
